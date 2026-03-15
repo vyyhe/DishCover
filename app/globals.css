@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* DishCover mobile UI */
+  --dc-yellow: #FAE570;
+  --dc-yellow-dark: #FAE570;
+  --dc-yellow-welcome: #FAE570;
+  --dc-green: #d4edda;
+  --dc-green-border: #a3d9a5;
+  --dc-gray: #e9ecef;
+  --dc-gray-border: #dee2e6;
+  --dc-orange: #ffe4cc;
+  --dc-yellow-light: #fdf8c0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-dc-yellow: var(--dc-yellow);
+  --color-dc-yellow-dark: var(--dc-yellow-dark);
+  --color-dc-yellow-welcome: var(--dc-yellow-welcome);
+  --color-dc-green: var(--dc-green);
+  --color-dc-green-border: var(--dc-green-border);
+  --color-dc-gray: var(--dc-gray);
+  --color-dc-gray-border: var(--dc-gray-border);
+  --color-dc-orange: var(--dc-orange);
+  --color-dc-yellow-light: var(--dc-yellow-light);
+  --font-sans: "Satoshi", sans-serif;
+  --font-mono: ui-monospace, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Satoshi", sans-serif;
+}
